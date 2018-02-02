@@ -1,0 +1,18 @@
+{
+  "name": "sequelizedemo2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test sequelize db:migrate:undo:all && NODE_ENV=test sequelize db:migrate && lab",
+    "start": "sequelize db:migrate && node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^16.6.2",
+    "pg": "^7.4.1",
+    "sequelize": "^4.32.2",
+    "sequelize-cli": "^3.2.0"
+  }
+}
